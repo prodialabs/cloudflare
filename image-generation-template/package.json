@@ -1,0 +1,27 @@
+{
+  "name": "image-generation-template",
+  "description": "Generate images based on text prompts",
+  "cloudflare": {
+    "label": "Image Generation App",
+    "products": [
+      "Workers"
+    ],
+    "categories": [
+      "ai"
+    ]
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "4.20250204.0",
+    "typescript": "5.7.2",
+    "wrangler": "3.107.2"
+  },
+  "scripts": {
+    "check": "tsc && wrangler --experimental-json-config deploy --dry-run",
+    "deploy": "wrangler --experimental-json-config deploy",
+    "dev": "wrangler --experimental-json-config dev",
+    "types": "wrangler --experimental-json-config types"
+  },
+  "dependencies": {
+    "prodia": "^1.5.0"
+  }
+}
